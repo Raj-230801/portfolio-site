@@ -1,0 +1,220 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: white;
+}
+body {
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #003251;
+}
+
+section {
+  scroll-margin-top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover {
+  border-bottom: 0.4rem yellowgreen solid;
+  transition: 0.3s ease-in-out;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#hero {
+  background: black;
+  padding: 10rem 0;
+  border-bottom: 4px solid greenyellow;
+  max-height: 100vh;
+}
+#hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hero_content {
+  display: grid;
+  place-items: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hi_text {
+  font-size: 6rem;
+  font-weight: bold;
+  color: blue;
+}
+.name_text {
+  font-size: 5rem;
+}
+
+#hero h2 {
+  font-size: 4rem;
+  font-weight: bold;
+
+
+}
+
+
+
+/* Project Section */
+
+.pdetail{
+  padding: 5rem;
+}
+.pdetail h3{
+  padding: 5rem;
+}
+
+#project {
+  background: rgb(40, 40, 40);
+  padding: 7rem 0 ;
+  border-bottom: 4px solid greenyellow;
+}
+
+#project h2 {
+  font-size: 6rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.project_container{
+  display: flex;
+  justify-content: center;
+  gap:20rem
+ 
+}
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+  opacity: 0.8;
+}
+.card:hover .card_content {
+  background: white;
+  color: rgb(0, 0, 0);
+  transform: translateY(0px);
+}
+
+.card_content {
+  padding: 2rem;
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.5s ease-in-out;
+  transform: translateY(100px);
+}
+.card_content h3 {
+  text-align: center;
+}
+
+/* Contact Section */
+#contact {
+  background: black;
+}
+
+#contact h2 {
+  font-size: 6rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#contact .container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.top_contact {
+  max-width: 800px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+.contact_way {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contact_way i {
+  font-size: 3rem;
+}
+.contact_way h3 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.bottom_contact {
+  max-width: 400px;
+  gap: 3rem;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
