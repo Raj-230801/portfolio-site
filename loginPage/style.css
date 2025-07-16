@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+
+  margin: 500px auto;
+  height: 550px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px 9px rgba(184, 184, 184, 0.7);
+}
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: #000000;
+  background: linear-gradient(to right, #c4e0ff, #317dff);
+
+  border-radius: 30px;
+  display: flex;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: linear-gradient(to right, #317dff, #c4e0ff);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.7s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #333;
+}
+
+.check-box {
+  color: #333;
+}
+
+span {
+  color: #333;
+  font-size: 14px;
+}
+
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 0;
+  background: linear-gradient(to right, #317dff, #c4e0ff);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#login {
+  left: 50px;
+}
+
+#register {
+  left: 450px;
+}
